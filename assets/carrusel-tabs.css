@@ -34,11 +34,11 @@
 }
 
 .tabs-titles tab-title[active] {
-  background: #000;
+  background: #9B9B9B;
   color: #FFF;
 }
 
 .tabs-titles tab-title:hover {
-  background: #000;
+  background: #9B9B9B;
   color: #FFF;
 }

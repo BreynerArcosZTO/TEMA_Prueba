@@ -29,9 +29,9 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
+        "title": "Hot Collection",
+        "heading_size": "h1",
+        "description": "<p><strong>Within the urban scene, there is quality. Discover our styles</strong></p>",
         "show_description": false,
         "description_style": "body",
         "collection": "all",
@@ -39,7 +39,7 @@
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
-        "view_all_style": "solid",
+        "view_all_style": "outline",
         "enable_desktop_slider": false,
         "color_scheme": "scheme-1",
         "image_ratio": "adapt",

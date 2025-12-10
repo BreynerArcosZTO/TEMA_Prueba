@@ -1,14 +1,14 @@
 {{ 'section-faq.css' | asset_url |  stylesheet_tag }}
 
 <div class="page-widht faq">
-    <h2 class="h1">Preguntas frecuentes</h2>
+    <h2 class="h1">{{section.settings.headline}}</h2>
 </div>
 
 {% for block in section.blocks %}
 <div class="faq_row">
-    <input type="checkbox" id="pregunta_{{forloop.index}} " class="faq_toggle">
-    <label for="pregunta_{{forloop.index}}" class="faq_question">{{block.settings.question}}</label>
-    <div class="faq_answer">{{block.settings.answer}}</div>
+    <input type="checkbox" id="question_{{ forloop.index }}" class="faq_toggle">
+    <label for="question_{{ forloop.index }}" class="faq_question">{{ block.settings.question }}</label>
+    <div class="faq_answer">{{ block.settings.answer }}</div>
 </div>
   {% endfor %}
 
@@ -19,14 +19,14 @@
     "settings": [
         {
           "type": "text",
-          "id": "Titulo",
+          "id": "headline",
           "label": "titulo"
         }
 
     ],
     "blocks": [
       {
-        "name": "pregunta",
+        "name": "question",
         "type": "question",
         "settings": [
            {

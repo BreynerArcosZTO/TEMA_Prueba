@@ -27,9 +27,11 @@
     float: right;
     transition: transform 0.2s ease;
 }
+
 .faq_toggle:checked + .faq_question::after {
     transform: rotate(90deg);
 }
+
 .faq_answer{
     max-height: 0;
     overflow: hidden;

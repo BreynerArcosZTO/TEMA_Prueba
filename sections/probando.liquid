@@ -4,21 +4,13 @@
     <h2 class="h1">Preguntas frecuentes</h2>
 </div>
 
+{% for block in section.blocks %}
 <div class="faq_row">
-    <input type="checkbox" id="pregunta_1" class="faq_toggle">
-    <label for="pregunta_1" class="faq_question">Cual es la politica?</label>
-    <div class="faq_answer">Los items que desean ser regresados tienen 30 dias para su devolucion. Contactanos</div>
+    <input type="checkbox" id="pregunta_{{forloop.index}} " class="faq_toggle">
+    <label for="pregunta_{{forloop.index}}" class="faq_question">{{block.settings.question}}</label>
+    <div class="faq_answer">{{block.settings.answer}}</div>
 </div>
-<div class="faq_row">
-    <input type="checkbox" id="pregunta_2" class="faq_toggle">
-    <label for="pregunta_2" class="faq_question">Cuanto tarda el envío?</label>
-    <div class="faq_answer">El envio tarda hasta 7 dias habiles, segun tu ubicación. Si tienes algun problema contactanos</div>
-</div>
-<div class="faq_row">
-    <input type="checkbox" id="pregunta_3" class="faq_toggle">
-    <label for="pregunta_3" class="faq_question">Las ofertas son a nivel internacional?</label>
-    <div class="faq_answer">Por supuesto, al igual que los envios. Estos dependen tambien de la transportadora encargada</div>
-</div>
+  {% endfor %}
 
 {% schema %}
   {

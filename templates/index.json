@@ -53,10 +53,46 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "probando_iHfxrr": {
+      "type": "probando",
+      "blocks": {
+        "question_zEJVHw": {
+          "type": "question",
+          "settings": {
+            "question": "Políticas de devolución",
+            "answer": "Para devolver un producto tendrá un tiempo limite de 30 días, y debe estar en buenas condiciones."
+          }
+        },
+        "question_Wrpxzk": {
+          "type": "question",
+          "settings": {
+            "question": "Cuanto tarda el envío?",
+            "answer": "El envio tarda hasta 7 dias habiles, segun tu ubicación. Si tienes algun problema contactanos"
+          }
+        },
+        "question_rHqzab": {
+          "type": "question",
+          "settings": {
+            "question": "Las ofertas son a nivel internacional?",
+            "answer": "Por supuesto, al igual que los envios. Estos dependen tambien de la transportadora encargada"
+          }
+        }
+      },
+      "block_order": [
+        "question_zEJVHw",
+        "question_Wrpxzk",
+        "question_rHqzab"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "Titulo": ""
+      }
     }
   },
   "order": [
     "banner_adidas_9Cc9tH",
-    "featured_collection"
+    "featured_collection",
+    "probando_iHfxrr"
   ]
 }

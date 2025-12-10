@@ -86,7 +86,7 @@
       ],
       "name": "FAQ",
       "settings": {
-        "Titulo": "Preguntas Frecuentes"
+        "headline": "Preguntas Frecuentes"
       }
     }
   },

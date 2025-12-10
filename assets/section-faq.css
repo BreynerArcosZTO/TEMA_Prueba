@@ -19,7 +19,7 @@
 }
 
 .faq_question:hover{
-    background-color: lightskyblue;
+    background-color: rgb(180, 181, 182);
 }
 
 .faq_question::after{
